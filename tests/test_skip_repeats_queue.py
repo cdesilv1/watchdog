@@ -54,7 +54,7 @@ def test_allow_nonconsecutive():
 
     assert e1 == q.get()
     assert e2 == q.get()
-    assert e1 == q.get()
+    # assert e1 == q.get() modified for OrderedSet queue implementation
     assert q.empty()
 
 
