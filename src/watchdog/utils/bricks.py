@@ -81,7 +81,7 @@ class OrderedSet(collections.MutableSet):
             yield curr[0]
             curr = curr[1]
 
-    def pop(self, last=True):
+    def pop(self, last=False):
         if not self:
             raise KeyError('set is empty')
         key = self.end[1][0] if last else self.end[2][0]
